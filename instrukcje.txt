@@ -1,0 +1,44 @@
+owerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Cloning into 'first_repo'...
+remote: Counting objects: 100% (3/3), done.
+Receiving objects: 100% (3/3), done.
+(.venv) PS C:\Users\vdi-student\PycharmProjects\Wiktoria_Bobrowska> cp .\plik1.txt .\first_repo\
+fatal: not a git repository (or any of the parent directories): .git
+(.venv) PS C:\Users\vdi-student\PycharmProjects\Wiktoria_Bobrowska> git clone https://github.com/WiktoriaBob/first_repo.git
+fatal: destination path 'first_repo' already exists and is not an empty directory.
+(.venv) PS C:\Users\vdi-student\PycharmProjects\Wiktoria_Bobrowska> git add .
+fatal: not a git repository (or any of the parent directories): .git
+(.venv) PS C:\Users\vdi-student\PycharmProjects\Wiktoria_Bobrowska> cd .\first_repo\
+(.venv) PS C:\Users\vdi-student\PycharmProjects\Wiktoria_Bobrowska\first_repo> git add .
+(.venv) PS C:\Users\vdi-student\PycharmProjects\Wiktoria_Bobrowska\first_repo> git commit -m "dodanie pliku"
+[main 09ad2d3] dodanie pliku
+ Committer: student-wroclaw <student-wroclaw@EDU-WSB.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+
+After doing this, you may fix the identity used for this commit with:
+    git commit --amend --reset-author
+
+ create mode 100644 plik1.txt
+(.venv) PS C:\Users\vdi-student\PycharmProjects\Wiktoria_Bobrowska\first_repo> git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/WiktoriaBob/first_repo.git'
+(.venv) PS C:\Users\vdi-student\PycharmProjects\Wiktoria_Bobrowska\first_repo> git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/WiktoriaBob/first_repo.git'
+(.venv) PS C:\Users\vdi-student\PycharmProjects\Wiktoria_Bobrowska\first_repo> git push origin
+Enumerating objects: 4, done.
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/WiktoriaBob/first_repo.git
+   4a7fd2c..09ad2d3  main -> main
